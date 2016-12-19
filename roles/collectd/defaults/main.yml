@@ -5,6 +5,18 @@ collectd_service_name: collectd
 graphite_port: 2003
 graphite_host: localhost
 
+collectd_write_to_graphite: true
+
+collectd_write_to_fluentd: false
+
+collectd_write_to_fluentd_host: localhost
+collectd_write_to_fluentd_port: 8888
+collectd_write_to_fluentd_path: ""
+collectd_write_to_fluentd_url: "http://{{ collectd_write_to_fluentd_host }}:{{ collectd_write_to_fluentd_port }}/{{ collectd_write_to_fluentd_path }}"
+
 collectd_plugins:
   - collectd-sensors
   - collectd-virt
+  - collectd-disk
+  - collectd-netlink
+  - collectd-write_http

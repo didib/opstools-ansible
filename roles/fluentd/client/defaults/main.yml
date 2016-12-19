@@ -1,0 +1,4 @@
+---
+# A list of plugins that will be installed on the fluentd client.
+fluentd_client_plugins:
+  - rubygem-fluent-plugin-rewrite-tag-filter

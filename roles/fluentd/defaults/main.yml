@@ -23,6 +23,9 @@ fluentd_group: fluentd
 # File mode for Fluentd configuration files.
 fluentd_config_mode: 0640
 
+# File mode for Fluentd configuration directories.
+fluentd_config_dir_mode: 0750
+
 # A list of Fluentd plugins to install along with Fluentd.
 fluentd_plugins:
   - rubygem-fluent-plugin-secure-forward

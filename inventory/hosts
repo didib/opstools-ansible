@@ -1,0 +1,4 @@
+ovirthost1 ansible_host=lvc7host1
+
+[ovirt_nodes]
+ovirthost1
